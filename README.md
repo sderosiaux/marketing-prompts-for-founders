@@ -1,18 +1,16 @@
 # Marketing Prompts for Founders
 
-**Get your first customers this week.** Clone this repo, type one command, answer 3 questions about your product, and get a complete marketing playbook built for your situation — cold emails, landing page copy, launch plan, pricing strategy, whatever you need right now.
+**Skip the marketing blogs.** Clone this repo, answer 3 questions about your product, get a marketing playbook built for your situation — cold emails, landing page copy, launch plan, pricing strategy, whatever you need right now. Works with Claude Code, ChatGPT, Cursor, or any LLM.
 
-Built for solo technical founders who'd rather ship code than read marketing blogs.
+Built for solo technical founders who'd rather ship code than read marketing theory.
 
 Based on [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Founders) by [@e_stradella](https://x.com/e_stradella) — 300+ curated resources, deduplicated and distilled into guided workflows that produce real artifacts. Knowledge base last updated: March 2026.
 
-Used by [Conduktor](https://conduktor.io).
+I built this while marketing [Conduktor](https://conduktor.io).
 
 ## Prerequisites
 
-This repo is built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). You need Claude Code installed to use the slash commands.
-
-**Don't have Claude Code?** See [Using Without Claude Code](#using-without-claude-code) below.
+The slash commands use [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (requires a Claude Pro subscription, $20/mo). The `knowledge/` folder works standalone with any LLM — see [Using Without Claude Code](#using-without-claude-code).
 
 ## Quick Start
 
@@ -158,7 +156,11 @@ Works for co-founder teams too — each person clones the repo and runs commands
 
 ## Not Generic AI
 
-Each command reads from a 4,600-line knowledge base synthesized from 300+ practitioner articles (PostHog, Lenny's Newsletter, GTM Strategist). The prompts enforce one-question-at-a-time coaching, real artifact generation, and stage-appropriate advice. No "[Your Product]" placeholders, no marketing theory lectures.
+Each command reads from a 4,600-line knowledge base synthesized from 300+ practitioner articles (PostHog, Lenny's Newsletter, GTM Strategist). The prompts guide one-question-at-a-time coaching, real artifact generation, and stage-appropriate advice. No "[Your Product]" placeholders, no marketing theory lectures.
+
+## Limitations
+
+This won't replace talking to your customers. It won't substitute for a real marketer at scale. It will save you 20 hours of reading marketing blogs and give you a structured starting point with real artifacts you can ship today.
 
 ## Using Without Claude Code
 
