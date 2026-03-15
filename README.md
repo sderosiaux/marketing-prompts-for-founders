@@ -6,7 +6,7 @@ Based on [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Found
 
 ## What This Is
 
-19 knowledge files, 16 interactive commands, and a journey orchestrator that tells you exactly what marketing to do next based on where you are.
+19 knowledge files, 20 interactive commands, and a journey orchestrator that tells you exactly what marketing to do next based on where you are.
 
 **Not a reading list.** Every command asks about YOUR product, walks you through a methodology, and generates real artifacts — emails, landing page copy, SEO strategies, launch plans — customized to your situation.
 
@@ -18,24 +18,9 @@ Based on [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Found
 git clone https://github.com/YOUR_USERNAME/marketing-prompts-for-founders.git
 ```
 
-### 2. Install into Claude Code
+### 2. Start your journey
 
-Option A — Symlink (recommended, stays in sync):
-```bash
-# Link knowledge, skills, and commands into your Claude config
-ln -s $(pwd)/knowledge ~/.claude/knowledge/_marketing
-ln -s $(pwd)/skills/marketing.md ~/.claude/skills/marketing.md
-ln -s $(pwd)/commands/marketing ~/.claude/commands/marketing
-```
-
-Option B — Copy:
-```bash
-cp -r knowledge/ ~/.claude/knowledge/_marketing/
-cp skills/marketing.md ~/.claude/skills/marketing.md
-cp -r commands/marketing/ ~/.claude/commands/marketing/
-```
-
-### 3. Start your journey
+Open the repo in Claude Code — commands and skills are auto-discovered from `.claude/`.
 
 ```
 /marketing:journey
@@ -110,19 +95,20 @@ See `knowledge/_INDEX.md` for the full map.
 marketing-prompts-for-founders/
 ├── README.md
 ├── CLAUDE.md                      # Claude Code project instructions
+├── .claude/
+│   ├── commands/
+│   │   └── marketing/
+│   │       ├── journey.md         # Stage orchestrator (start here)
+│   │       ├── validate.md
+│   │       ├── ...
+│   │       └── growth.md
+│   └── skills/
+│       └── marketing.md           # Core skill loaded by all commands
 ├── knowledge/                     # Canonical marketing knowledge (19 files)
 │   ├── _INDEX.md                  # Quick reference map
 │   ├── 01-idea-validation.md
 │   ├── ...
 │   └── 19-growth-tactics.md
-├── skills/
-│   └── marketing.md               # Core skill loaded by all commands
-├── commands/
-│   └── marketing/
-│       ├── journey.md             # Stage orchestrator (start here)
-│       ├── validate.md
-│       ├── ...
-│       └── growth.md
 ├── raw/                           # Raw extractions (18 files, for reference)
 └── docs/
     └── plans/                     # Design documents
