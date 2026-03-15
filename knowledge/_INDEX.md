@@ -33,6 +33,8 @@ These commands don't have dedicated knowledge files — they pull from multiple 
 | `/marketing:review` | Stress-test any artifact as your target customer | 03, 04, 18 |
 | `/marketing:audit` | Audit a live page for SEO + messaging + conversion | 04, 07, 18 |
 | `/marketing:write` | Write a blog post, HN post, tweet thread, LinkedIn post | 13 |
+| `/marketing:competitors` | Competitive analysis and battle cards | 03 |
+| `/marketing:metrics` | Stage-specific measurement framework | all (benchmarks) |
 
 ## Quick Start
 

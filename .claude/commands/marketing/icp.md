@@ -227,4 +227,6 @@ You've defined:
 
 ## Next Command
 
-→ `/marketing:review` — Stress-test your positioning by role-playing as your target customer. Then → `/marketing:landing-page` to build a page that converts this positioning into signups.
+→ `/marketing:competitors` — Analyze your competitors and build battle cards based on your positioning.
+→ `/marketing:review` — Stress-test your positioning by role-playing as your target customer.
+→ `/marketing:landing-page` — Build a page that converts this positioning into signups.

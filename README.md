@@ -10,7 +10,7 @@ Based on [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Found
 
 This repo is built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). You need Claude Code installed to use the slash commands.
 
-**Don't have Claude Code?** The `knowledge/` folder contains 19 standalone marketing playbooks you can use with any LLM. Copy them into ChatGPT, Cursor, or any AI tool as context — they work on their own.
+**Don't have Claude Code?** See [Using Without Claude Code](#using-without-claude-code) below.
 
 ## Quick Start
 
@@ -29,27 +29,40 @@ It asks where you are and tells you exactly what to do next.
 
 ## What It Looks Like
 
+Here's a real session — running `/marketing:landing-page` for a developer analytics tool:
+
 ```
-You: /marketing:journey
+You: /marketing:landing-page
+     Product: DevDash — developer analytics showing code review bottlenecks.
+     ICP: engineering managers at 20-100 person startups.
+     Differentiator: PR-level bottlenecks, not just aggregate stats.
 
-Claude: Where are you right now?
-  A) I have an idea but haven't validated it yet
-  B) I have a product but no landing page
-  C) I have a landing page but zero users
-  D) I have some users (< 100) but need more
-  ...
+Claude: Knowledge loaded. Let's build your homepage copy section by section.
 
-You: C
+        ## Section 1: Hero
 
-Claude: You need users fast. Is your product B2B SaaS, dev tool, or consumer?
+        Here are 5 headline options for DevDash:
 
-You: B2B SaaS
+        | # | Technique         | Headline                              |
+        |---|-------------------|---------------------------------------|
+        | 1 | Direct benefit    | See exactly where PRs get stuck       |
+        | 2 | Problem-first     | Your code reviews are a bottleneck    |
+        | 3 | Contrast          | Less guessing, more shipping          |
+        | 4 | Specific proof    | Find PR bottlenecks in 30 seconds     |
+        | 5 | Audience-first    | The dashboard EMs actually need       |
 
-Claude: Run /marketing:outreach — cold outreach gets the fastest feedback at your stage.
-        Then /marketing:launch for broader reach.
+        My recommendation: #1 — "See exactly where PRs get stuck"
+
+        Subheadline: Developer analytics that show PR-level bottlenecks,
+        not just team averages.
+
+        CTA button: Start finding bottlenecks →
+
+        Before I continue — do you want to go with headline #1,
+        or prefer a different one?
 ```
 
-Then `/marketing:outreach` asks about your product and generates 3 cold email templates, a lead sourcing strategy, and a 2-week outreach sequence — all customized to your specific product and audience.
+It then walks through 7 sections (hero, problem, solution, features, how it works, social proof, CTA), generating real copy for each. After you're done, it points you to `/marketing:review` to stress-test the copy from your customer's perspective.
 
 ## Commands
 
@@ -96,6 +109,8 @@ Then `/marketing:outreach` asks about your product and generates 3 cold email te
 | `/marketing:audit` | Audit a live page for SEO, messaging, and conversion issues |
 | `/marketing:write` | Write a blog post, Show HN post, Twitter thread, or LinkedIn post |
 | `/marketing:cro` | Conversion rate optimization — CTAs, signup flow |
+| `/marketing:metrics` | Define the 5 metrics that matter for your stage |
+| `/marketing:competitors` | Competitive analysis — battle cards, positioning gaps |
 
 ### Advanced Channels
 
@@ -116,22 +131,41 @@ Each command:
 
 The knowledge base behind the commands contains frameworks, templates, benchmarks, and anti-patterns synthesized from 300+ articles. Claude reads them to inform its advice — you never see raw theory, only customized output.
 
+Artifacts can be saved to `marketing-artifacts/` in your project so they persist between sessions.
+
 ## Using Without Claude Code
 
-The `knowledge/` folder works standalone. Each file is a complete marketing playbook:
+The `knowledge/` folder works standalone with any LLM. Here's how:
+
+### With ChatGPT or any chat-based LLM
+
+1. Pick the knowledge file for your need (see table below)
+2. Copy the entire file content into a new conversation
+3. Add this prompt:
 
 ```
-knowledge/
-├── 01-idea-validation.md        # Hypothesis scoring, 7-day validation playbook
-├── 03-icp-positioning.md        # ICP frameworks, positioning templates
-├── 04-landing-pages-messaging.md # Page structure, headline formulas
-├── 07-seo.md                    # Keyword categories, APTK framework
-├── 11-cold-outreach.md          # Email sequences, trigger events
-├── ...                          # 19 files total
-└── _INDEX.md                    # Quick reference map
+You are a marketing advisor for solo SaaS founders. Use the knowledge
+above to help me with my specific product. Ask me about my product,
+who it's for, and where I am today. Then walk me through the frameworks
+step by step, generating real artifacts (copy, emails, strategies)
+customized to my situation. Ask one question at a time.
 ```
 
-Copy any file into your LLM of choice and ask it to help you apply the frameworks to your product.
+### With Cursor or AI-powered editors
+
+1. Add the `knowledge/` folder to your project
+2. Reference files in your prompts: `@knowledge/03-icp-positioning.md help me define my ICP`
+
+### Most useful files to start with
+
+| File | Best for | Lines |
+|---|---|---|
+| `03-icp-positioning.md` | Defining your target customer + positioning statement | 312 |
+| `04-landing-pages-messaging.md` | Writing homepage copy that converts | ~300 |
+| `11-cold-outreach.md` | Building a cold email system from scratch | 374 |
+| `01-idea-validation.md` | Testing if your idea is worth building | ~250 |
+| `08-llm-aeo.md` | Getting recommended by ChatGPT and AI search | ~200 |
+| `_INDEX.md` | Quick reference map of all 19 files | 39 |
 
 ## Credits
 

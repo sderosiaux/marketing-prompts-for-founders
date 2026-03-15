@@ -231,4 +231,6 @@ You've designed a CRO audit with:
 
 ## Next Command
 
-→ `/marketing:audit` — Run a full page audit (SEO + messaging + conversion) on your live URL. Or → `/marketing:pricing` to ensure pricing matches customer value perception.
+→ `/marketing:metrics` — Set up a measurement framework to track CRO impact.
+→ `/marketing:audit` — Run a full page audit (SEO + messaging + conversion) on your live URL.
+→ `/marketing:pricing` — Ensure pricing matches customer value perception.

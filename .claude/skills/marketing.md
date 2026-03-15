@@ -37,6 +37,14 @@ When generating artifacts (emails, copy, strategies), always:
 - Provide 2-3 variations when relevant (e.g., email subject lines)
 - Format for easy copy-paste
 
+## Saving Artifacts
+
+When you generate substantial artifacts (ICP documents, email sequences, battle cards, content plans), offer to save them:
+
+> "Want me to save this to `marketing-artifacts/[name].md` so you can reference it later?"
+
+If yes, write the artifact to `marketing-artifacts/` in the project root. This preserves work between sessions. Use descriptive filenames: `icp.md`, `cold-emails.md`, `battle-card-vs-competitor.md`, `weekly-metrics.md`.
+
 ## What to Skip
 
 - Time estimates (they're always wrong)

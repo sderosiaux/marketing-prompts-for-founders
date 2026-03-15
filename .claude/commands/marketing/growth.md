@@ -249,4 +249,5 @@ You've created a growth plan with:
 
 ## Next Command
 
-→ `/marketing:journey` — After 4-8 weeks, revisit your growth strategy. You'll likely have moved to the next stage. Reassess which tactics still apply.
+→ `/marketing:metrics` — Set up a measurement framework to track what's working.
+→ `/marketing:journey` — After 4-8 weeks, revisit your growth strategy. You'll likely have moved to the next stage.

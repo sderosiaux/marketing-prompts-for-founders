@@ -58,6 +58,7 @@ Ask: **"Is your product B2B SaaS, developer tool, consumer app, or something els
    - You found them? → `/marketing:outreach`
    - Word of mouth? → `/marketing:affiliates`
 3. Set up `/marketing:email` — don't lose the users you're getting
+4. Run `/marketing:metrics` — define the 5 numbers that matter at your stage
 
 ### F) 100+ users, scale growth
 1. Run `/marketing:audit` — audit your existing page before adding traffic
@@ -70,7 +71,8 @@ Ask: **"Is your product B2B SaaS, developer tool, consumer app, or something els
 1. Run `/marketing:pricing` — most founders underprice
 2. Run `/marketing:email` — lifecycle emails for retention and expansion
 3. Run `/marketing:research` — talk to churned users
-4. Consider `/marketing:influencer` or `/marketing:affiliates` for new channels
+4. Run `/marketing:metrics` — track what matters (CAC, LTV, churn, expansion)
+5. Consider `/marketing:influencer` or `/marketing:affiliates` for new channels
 
 ## Step 3: Mention the Feedback Loop
 

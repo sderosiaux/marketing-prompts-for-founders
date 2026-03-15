@@ -91,7 +91,7 @@ Reference `knowledge/05-pricing.md` for pricing strategy and positioning.
 Provide:
 1. **Summary**: "Here's your complete homepage copy + pricing page structure, ready to drop into your design."
 2. **Next action**: "Copy this into your web builder or design tool, then test with your ICP."
-3. **Next command**: "→ `/marketing:review` to stress-test this copy from your customer's perspective, → `/marketing:pricing` to deep-dive pricing strategy, or → `/marketing:launch` to plan your first users."
+3. **Next command**: "→ `/marketing:review` to stress-test this copy from your customer's perspective, → `/marketing:competitors` to build comparison content, → `/marketing:pricing` to deep-dive pricing strategy, or → `/marketing:launch` to plan your first users."
 
 ## Rules
 
