@@ -4,7 +4,9 @@
 
 Built for solo technical founders who'd rather ship code than read marketing blogs.
 
-Based on [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Founders) by [@e_stradella](https://x.com/e_stradella) — 300+ curated resources, deduplicated and distilled into guided workflows that produce real artifacts.
+Based on [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Founders) by [@e_stradella](https://x.com/e_stradella) — 300+ curated resources, deduplicated and distilled into guided workflows that produce real artifacts. Knowledge base last updated: March 2026.
+
+Used by [Conduktor](https://conduktor.io).
 
 ## Prerequisites
 
@@ -72,6 +74,25 @@ It then walks through 7 sections (hero, problem, solution, features, how it work
 |---|---|
 | `/marketing:journey` | Diagnoses your stage, tells you what to do next |
 
+### Typical founder journey
+
+```mermaid
+graph LR
+    V[validate] --> I[icp]
+    I --> L[landing-page]
+    L --> P[pricing]
+    P --> O[outreach / launch]
+    O --> S[seo / content]
+    S --> G[grow / scale]
+
+    R[review + audit] -.-> L
+    R -.-> O
+    M[metrics + cro] -.-> S
+    M -.-> G
+```
+
+`/marketing:journey` figures out where you are and drops you at the right step.
+
 ### Foundation (do these first)
 
 | Command | What It Does |
@@ -131,7 +152,13 @@ Each command:
 
 The knowledge base behind the commands contains frameworks, templates, benchmarks, and anti-patterns synthesized from 300+ articles. Claude reads them to inform its advice — you never see raw theory, only customized output.
 
-Artifacts can be saved to `marketing-artifacts/` in your project so they persist between sessions.
+Artifacts can be saved to `marketing-artifacts/` in your project so they persist between sessions. Your product context is saved automatically after your first session, so you never re-describe your product.
+
+Works for co-founder teams too — each person clones the repo and runs commands. Share `marketing-artifacts/` via git to stay aligned.
+
+## Not Generic AI
+
+Each command reads from a 4,600-line knowledge base synthesized from 300+ practitioner articles (PostHog, Lenny's Newsletter, GTM Strategist). The prompts enforce one-question-at-a-time coaching, real artifact generation, and stage-appropriate advice. No "[Your Product]" placeholders, no marketing theory lectures.
 
 ## Using Without Claude Code
 

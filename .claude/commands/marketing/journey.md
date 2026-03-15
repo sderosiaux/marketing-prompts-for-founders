@@ -74,6 +74,14 @@ Ask: **"Is your product B2B SaaS, developer tool, consumer app, or something els
 4. Run `/marketing:metrics` — track what matters (CAC, LTV, churn, expansion)
 5. Consider `/marketing:influencer` or `/marketing:affiliates` for new channels
 
+## Step 2.5: Save Context
+
+If `marketing-artifacts/context.md` doesn't exist yet, ask:
+
+> "Want me to save your product context so future commands remember you?"
+
+If yes, write `marketing-artifacts/context.md` with their product description, ICP, product type, and stage from Steps 1-2.
+
 ## Step 3: Mention the Feedback Loop
 
 After recommending channel commands, always mention the review commands that close the loop:
