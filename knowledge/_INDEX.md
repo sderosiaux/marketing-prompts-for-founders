@@ -23,6 +23,7 @@
 | 17 | free-tool-marketing | Side projects as marketing | `/marketing:free-tools` |
 | 18 | cro | Conversion rate optimization | `/marketing:cro` |
 | 19 | growth-tactics | Misc growth tactics, first 1000 users | `/marketing:growth` |
+| 20 | oss-growth-case-studies | Real case studies of explosive OSS growth | `/marketing:growth` |
 
 ## Review & Optimize Commands
 
